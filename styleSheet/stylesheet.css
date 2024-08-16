@@ -1,0 +1,30 @@
+@import "~bootstrap/scss/bootstrap";
+
+#sideNav {
+}
+
+.nav-link {
+    text-decoration: none;
+    flex-direction: column;
+    color: #464646;
+    list-style: none;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    display: flex;
+    flex-direction: column;
+}
+
+#sideNav {
+    position: fixed;
+    
+}
+
+#main {
+    margin-left: 5%;
+    
+}
