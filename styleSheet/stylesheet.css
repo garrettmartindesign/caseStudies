@@ -1,6 +1,7 @@
 @import "~bootstrap/scss/bootstrap";
 
-#sideNav {
+.col-lg-2 {
+    background-color: #fafafa;
 }
 
 .nav-link {
@@ -14,17 +15,17 @@ ul {
     list-style: none;
 }
 
-li {
-    display: flex;
-    flex-direction: column;
-}
-
 #sideNav {
     position: fixed;
     
 }
 
-#main {
-    margin-left: 5%;
-    
+.nav-links {
+    margin-left: -52px;
+
+}
+
+.nan-links li {
+    display: flex;
+    flex-direction: row;
 }
