@@ -22,94 +22,126 @@
 <body>
 <!--Side Navigation------------------------------------------------------------------->
 <div class="container-fluid">
-    <div class="row" id="sideNav">
-        <div class="col-lg-2" >
-            <button id="menuToggle" class="menu-button">Menu</button>
-
-            <div class="logoImg">
+    <div class="row">
+        <div class="col-lg-2"  id="sideNav">
+            <button id="menuToggle" class="menu-button btn btn-primary d-none">Menu</button>
+            <div class="container margin" id="navHeader">
                 <div class="logo">
                     <a href="index.html"><img src="img/headshot/simiportrait.png" alt="GMD Logo" width="52px" max-width="80px"></a>
                 </div>
-                <div class="navTitle ">
+                <div class="navTitle">
                     <h3>Garrett Martin</h3>
                     <h4>UX/UI Designer</h4>
                 </div>
             </div>
-            <ul class="nav-links">
-                <li class="nav-item">
-                    <div>
-                        <a href="index.html" class="nav-link">
-                        <img src="img/icons/SVG/homeIcon.svg"  width="16px" alt="home icon" class="icon">
-                    </div>
-                    <div>
-                        <h4>Home</h4>
-                    </div>
-                </a>
-                </li>
-                <li class="nav-item">
-                    <a href="about.html" class="nav-link"><div><span><img src="img/icons/SVG/aboutIcon.svg" width="16px" alt="about icon" class="icon"></span><h4>About Me</h4></div></a></li>
-                <li class="nav-item flex"><a href="stack.html" class="nav-link"><div><span><img src="img/icons/SVG/stackIcon.svg" width="16px" alt="stack icon" class="icon"></span><h4>The Stack</h4></div></a></li>
-                <li class="nav-item flex"><a href="contact.html" class="nav-link"><div><span><img src="img/icons/SVG/contactIcon.svg" width="16px" alt="contact icon" class="icon"></span><h4>Contact</h4></div></a></li>
-            </ul>
-                
-            <div class="container">
-                <ul class="navPanel-contents ">
-                    <li class="nav-item"><a href="sierrasrace.html" class="nav-link">Sierra's Race</a></li> 
-                    <li class="nav-item"><a href="usda.html" class="nav-link active">USDA</a></li>
-                    <li class="nav-item"><a href="thesoundroom.html" class="nav-link">The Sound Room</a></li>
-                </ul>   
-            </div>
+            <nav class="navbar bg-body-tertiary">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">
+                    <img src="img/icons/SVG/homeIcon.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                    Home
+                  </a>
+                </div>
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                      <img src="img/icons/SVG/aboutIcon.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                      About
+                    </a>
+                  </div>
+                  <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                      <img src="img/icons/SVG/stackIcon.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                      The Stack
+                    </a>
+                  </div>
+                  <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                      <img src="img/icons/SVG/contactIcon.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                      Contact
+                    </a>
+                  </div>
+            </nav>
+            <div class="dropdown margin" id="featured-work">
+                <button type="button" class="btn btn-primary dropdown-toggle custom-button" data-toggle="dropdown">
+                  Featured Projects
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Sierra's Race</a>
+                  <a class="dropdown-item" href="#">USDA</a>
+                  <a class="dropdown-item" href="#">The Sound Room</a>
+                </div>
+            </div>    
+            
             <div class="footInfo">
-                <div><p>@All Rights Reserved, Garrett Martin Design</p></div>
+                <p>@All Rights Reserved, Garrett Martin Design</p>
             </div>
         </div>
-        <div class="col-lg" id="main">
-            <div class="container-fluid col">
-                <ul class="nav nav-pills nav-justified">
-                    <li class="nav-item"><a href="#user-testing" class="nav-link active">User Testing</a> </li>
-                    <li class="nav-item"><a href="#information-architecture">Information Architecture</a></li>
-                    <li class="nav-item"><a href="#prototyping">Prototyping</a></li>
-                    <li class="nav-item"><a href="#tesing-iterations">Testing & Interations</a></li>
-                    <li class="nav-item"><a href="#usda-results">Results</a></li>
+        <div class="col-md" id="main">
+            <nav id="navbar-example2" class="navbar bg-body-tertiary px-3 mb-3">
+                <a class="navbar-brand" href="#">Top</a>
+                <ul class="nav nav-pills">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#scrollspyHeading1">User Testing</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#scrollspyHeading2">Information Architecture</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#scrollspyHeading3">Prototyping</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#scrollspyHeading4">Testing</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#scrollspyHeading5">Results</a>
+                  </li>
                 </ul>
-            </div>
-            <div class="jumbtron jumbotron-fluid">
-                <div class="container">
-                    <img src="img/caseStudies/usdaRedesign/graphic design:design system/imgs/phoneMockup_USDA.jpg" width="100%" alt="imgTest">
-                    <h1>U.S. Department of Agriculture<br>
-                    <span class="subHeaderColor">Case Study: Homepage UI Redesign</span></h1>
-                </div>  
-            </div>
-            <div class="jumbtron jumbotron-fluid">
-                <div class="container" id="user-testing">
-                    <h2>User Testing</h2>
-                    <p>This will be information about user testing</p>
+            </nav>
+              <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-5 rounded-2 margin-header" tabindex="0">
+                <h4 id="scrollspyHeading1">User Testing</h4>
+                <div class="jumbtron jumbotron-fluid margin-top">
+                    <div class="container">
+                        <img src="img/caseStudies/usdaRedesign/graphic design:design system/imgs/phoneMockup_USDA.jpg" width="100%" alt="imgTest">
+                        <h1>U.S. Department of Agriculture<br>
+                        <span class="subHeaderColor">Case Study: Homepage UI Redesign</span></h1>
+                    </div>  
                 </div>
-            </div>
-            <div class="jumbtron jumbotron-fluid">
-                <div class="container" id="information-architecture">
-                    <h2>Information Architecture</h2>
-                    <p>This will be information about user testing</p>
+                <p>...</p>
+                <h4 id="scrollspyHeading2">Information Architecture</h4>
+                <div class="jumbtron jumbotron-fluid margin-top">
+                    <div class="container">
+                        <img src="img/caseStudies/usdaRedesign/graphic design:design system/imgs/phoneMockup_USDA.jpg" width="100%" alt="imgTest">
+                        <h1>U.S. Department of Agriculture<br>
+                        <span class="subHeaderColor">Case Study: Homepage UI Redesign</span></h1>
+                    </div>  
                 </div>
-            </div>
-            <div class="jumbtron jumbotron-fluid">
-                <div class="container" id="prototyping">
-                    <h2>Prototyping</h2>
-                    <p>This will be information about user testing</p>
+                <p>...</p>
+                <h4 id="scrollspyHeading3">Prototyping</h4>
+                <div class="jumbtron jumbotron-fluid margin-top">
+                        <img src="img/caseStudies/usdaRedesign/graphic design:design system/imgs/phoneMockup_USDA.jpg" width="100%" alt="imgTest">
+                        <h1>U.S. Department of Agriculture<br>
+                        <span class="subHeaderColor">Case Study: Homepage UI Redesign</span></h1>
                 </div>
-            </div>
-            <div class="jumbtron jumbotron-fluid">
-                <div class="container" id="testing-iterations">
-                    <h2>Testing & Iterations</h2>
-                    <p>This will be information about user testing</p>
+                <p>...</p>
+                <h4 id="scrollspyHeading4">Testing & Iterations</h4>
+                <div class="jumbtron jumbotron-fluid margin-top">
+                    <div class="container">
+                        <img src="img/caseStudies/usdaRedesign/graphic design:design system/imgs/phoneMockup_USDA.jpg" width="100%" alt="imgTest">
+                        <h1>U.S. Department of Agriculture<br>
+                        <span class="subHeaderColor">Case Study: Homepage UI Redesign</span></h1>
+                    </div>  
                 </div>
-            </div>
-            <div class="jumbtron jumbotron-fluid">
-                <div class="container" id="usda-results">
-                    <h2>Conclusion & Results</h2>
-                    <p>This will be information about user testing</p>
+                <p>...</p>
+                <h4 id="scrollspyHeading5">Conclusion & Results</h4>
+                <div class="jumbtron jumbotron-fluid margin-top">
+                    <div class="container">
+                        <img src="img/caseStudies/usdaRedesign/graphic design:design system/imgs/phoneMockup_USDA.jpg" width="100%" alt="imgTest">
+                        <h1>U.S. Department of Agriculture<br>
+                        <span class="subHeaderColor">Case Study: Homepage UI Redesign</span></h1>
+                    </div>  
                 </div>
-            </div>
+                <p>...</p>
+              </div>
+            
         </div>
     </div>    
 </div>
