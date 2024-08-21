@@ -1,5 +1,88 @@
-@import "~bootstrap/scss/bootstrap";
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: 1em;
+}
 
+
+
+@import "~bootstrap/scss/bootstrap";
+.card {
+    background-color: #fafafa;
+}
+.btn-primary {
+    background-color: #452f9f;
+}
+
+.btn-primary:hover {
+    background-color: #7158d5;
+    color: white;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: #452f9f;
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px #452f9f solid;
+}
+
+.btn-secondary:hover {
+    background-color: #452f9f;
+    color: white;
+    border-radius: 4px;
+    border: none;
+    border-bottom: 1px #452f9f solid;
+}
+
+
+.featured-header {
+    width: 100%;
+    height: 300px;
+    border-radius: 4px;
+    margin-top: 80px;
+    position: relative;
+}
+
+.overlay {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.858);
+    transition: 0.5s ease;
+}
+
+.overlay:hover {
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    background-color: #462f9fd3;
+    color: white;
+    border-radius: 4px;
+   
+}
+
+.featured-header img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+    position: absolute;
+}
+
+.featured-header div {
+    padding: 80px;
+    padding-left: 24px;
+    padding-right: 50%;
+    position: absolute;
+}
+.type {
+    padding: 40px;
+
+}
+
+.absolute {
+    position: absolute;
+}
 .col-lg-2 {
     background-color: #fafafa;
 }
@@ -76,6 +159,7 @@ ul {
 }
 
 #main {
+    padding-top: 0px;
     margin-left: 18%;
 }
 
@@ -109,6 +193,7 @@ ul {
     width: 100%;
     background-color: #452f9f;
     padding: 8px;
+    font-size: .8em;
 }
 
 .custom-button:hover {
@@ -142,14 +227,20 @@ ul {
 }
 
 #navbar-example2 {
-    width: 80%;
-    background-color: white;
+    width: 82%;
+    height: 100px;
+    margin-left: -32px;
+    background-color: #ffffff;
+    border-radius: 50px;
     position: fixed;
     padding-bottom: 20px;
-    border-bottom: 1px #46464628 solid;
     font-size: 1em;
+    z-index: 100;
 }
 
+.scrollspy-example {
+
+}
 
 #scrollspyHeading1, #scrollspyHeading2, #scrollspyHeading3, #scrollspyHeading4, #scrollspyHeading5 {
     border-bottom: 1px #46464628 solid;
@@ -163,4 +254,136 @@ ul {
 .nav-link:not(:last-child) {
     margin-right: 16px;
 }
+
+.page-active {
+    background-color: #970c0c;
+}
+
+
 /*Imported -----------------*/
+/*Index*/
+.title-header {
+    width: 100%;
+    padding: 24px;
+    padding-top: 60px;
+    
+}
+
+.title-header div {
+    margin-bottom: 40px
+}
+
+em {
+    color: #919191;
+    font-style: normal;
+}
+
+.button1, .button2 {
+    width: 10%;
+    border-radius: 50px;
+    padding: 4px 8px;
+    border: none;
+}
+
+.button1 {
+    background-color: #919191;
+    color: white;
+    margin-right: 16px;
+}
+
+.button1:hover, .button2:hover {
+    background-color: #452f9f;
+    color: white;
+}
+
+.whyMe {
+    width: 100%;
+    margin-top: 80px;
+}
+
+.whyMe h2 {
+    margin-bottom: 24px;
+}
+
+.whyMeIcons div {
+    display: flex;
+    gap: 16px;
+}
+
+.service-card {
+    padding: 16px;
+    margin: 8px;
+}
+.services, .featured-works, .tesimonial-container {
+    margin-top: 80px;
+}
+
+.services h2 {
+    margin-bottom: 24px;
+}
+
+.more-projects {
+    padding: 0px;
+    margin: 8px;
+}
+
+
+.more-projects img {
+    object-fit: cover;
+}
+
+.featured-works h2, .tesimonial-container h2 {
+    margin-bottom: 24px;
+}
+
+.tesimonial-container {
+    padding: 16px;
+    margin: 8px;
+}
+
+#connected {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    margin: 80px auto;
+    padding: 16px;
+    border-radius: 50px;
+    border: 1px #452f9f solid;
+    align-items: center !important;
+}
+.footer-type p {
+    font-size: .7em;
+}
+
+.jumbotron {
+    width: 100%;
+    background-color: white;
+    border-radius: 16px;
+    margin-top: 40px;
+}
+
+.jumbotron img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+}
+.navbar-example2 {
+    z-index: 10 !important;
+}
+#case-study-grids {
+    z-index: 1 !important;
+}
+
+.nav-counter {
+    width: 100%;
+    height: auto;
+    padding-top: 200px;
+
+    margin: 24px 0px;
+}
+.scrollspy-example div {
+    padding-top: 100px;
+}
+.margin-top img {
+    margin-top: -60px;
+}
